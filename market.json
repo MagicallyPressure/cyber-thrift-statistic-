@@ -1,0 +1,515 @@
+{
+ "schema": 1,
+ "updated": "2026-10-14",
+ "checked": {
+  "fx": "2026-10-13",
+  "fees": "2026-10-13",
+  "shipping": "2026-10-13",
+  "trends": "2026-10-13"
+ },
+ "src": {
+  "fx": "European Central Bank reference rates (via Frankfurter)",
+  "fees": "Each platform’s own fee pages",
+  "shipping": "paxi.co.za; Pudo price per Engineering News",
+  "trends": "Depop Trending, June & July 2026",
+  "colours": "Depop, July 2026"
+ },
+ "fx": {
+  "ZAR": 16.4963,
+  "GBP": 0.75492,
+  "EUR": 0.89381
+ },
+ "platforms": [
+  {
+   "id": "yaga",
+   "n": "Yaga",
+   "r": "SA",
+   "note": "No selling fee; buyers pay a buyer-protection fee. Ships via Pudo, PAXI, PostNet and Aramex. 2 million users, 6 million+ items sold since 2017 (BusinessTech, Jan 2026).",
+   "pct": 0,
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 1.1,
+    "shoes": 1,
+    "bags": 1,
+    "acc": 1,
+    "jewel": 0.9,
+    "home": 0.6,
+    "toys": 0.7,
+    "tech": 0.7,
+    "media": 0.5
+   }
+  },
+  {
+   "id": "fbm",
+   "n": "Facebook Marketplace",
+   "r": "SA",
+   "note": "No selling fee for local pickup. Strong for homeware, tech and bulky items. Meet in safe public spots.",
+   "pct": 0,
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 0.7,
+    "shoes": 0.8,
+    "bags": 0.8,
+    "acc": 0.6,
+    "jewel": 0.6,
+    "home": 1.2,
+    "toys": 1,
+    "tech": 1.2,
+    "media": 0.9
+   }
+  },
+  {
+   "id": "ig",
+   "n": "Instagram / WhatsApp shop",
+   "r": "SA",
+   "note": "No platform fee; you handle payment (EFT/SnapScan) and trust. Best for curated vintage drops.",
+   "pct": 0,
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 1.05,
+    "shoes": 0.9,
+    "bags": 1,
+    "acc": 1,
+    "jewel": 1,
+    "home": 0.8,
+    "toys": 0.7,
+    "tech": 0.6,
+    "media": 0.6
+   }
+  },
+  {
+   "id": "bob",
+   "n": "Bob Shop",
+   "r": "SA",
+   "capZAR": 5750,
+   "note": "Free listing in most categories; success fees vary by category (max R5,000 per item). Enter your category’s success fee in Settings to include it here.",
+   "pct": null,
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 0.7,
+    "shoes": 0.8,
+    "bags": 0.8,
+    "acc": 0.8,
+    "jewel": 1,
+    "home": 1,
+    "toys": 1.1,
+    "tech": 1.1,
+    "media": 1.1
+   }
+  },
+  {
+   "id": "depop_us",
+   "n": "Depop (US/UK)",
+   "r": "INTL",
+   "note": "0% selling fee in the US and UK since July 2024; payment processing 3.3% + US$0.45 (US). Boosting 12% on boosted sales. Other countries: 10% selling fee.",
+   "pct": 3.3,
+   "fixedUSD": 0.45,
+   "aff": {
+    "garment": 1.2,
+    "shoes": 1,
+    "bags": 1.05,
+    "acc": 1.1,
+    "jewel": 1,
+    "home": 0.5,
+    "toys": 0.6,
+    "tech": 0.6,
+    "media": 0.5
+   }
+  },
+  {
+   "id": "ebay",
+   "n": "eBay (US)",
+   "r": "INTL",
+   "note": "Most categories 13.6% + US$0.40 per order (over US$10). Women’s bags 15%; jewellery 15%; athletic shoes US$150+ 8% with no per-order fee.",
+   "pct": 13.6,
+   "fixedUSD": 0.4,
+   "cat": {
+    "bags": 15,
+    "jewellery": 15,
+    "watches": 15
+   },
+   "rules": [
+    {
+     "cat": "shoes",
+     "minUSD": 150,
+     "pct": 8,
+     "fixedUSD": 0
+    },
+    {
+     "maxUSD": 10.01,
+     "fixedUSD": 0.3
+    }
+   ],
+   "aff": {
+    "garment": 0.95,
+    "shoes": 1.05,
+    "bags": 1,
+    "acc": 1,
+    "jewel": 1.1,
+    "home": 1.15,
+    "toys": 1.2,
+    "tech": 1.25,
+    "media": 1.2
+   }
+  },
+  {
+   "id": "grailed",
+   "n": "Grailed",
+   "r": "INTL",
+   "note": "9% commission (6% on sales under US$120 since 20 May 2026, min US$1.99) plus payment processing (about 3.5% + US$0.49).",
+   "pct": 9,
+   "rules": [
+    {
+     "maxUSD": 120,
+     "pct": 6
+    }
+   ],
+   "minUSD": 1.99,
+   "procPct": 3.49,
+   "procFixedUSD": 0.49,
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 1.1,
+    "shoes": 1.1,
+    "bags": 0.9,
+    "acc": 0.9,
+    "jewel": 0.7,
+    "home": 0.1,
+    "toys": 0.1,
+    "tech": 0.1,
+    "media": 0.1
+   }
+  },
+  {
+   "id": "poshmark",
+   "n": "Poshmark (US)",
+   "r": "INTL",
+   "note": "20% on sales of US$15+; flat US$2.95 under US$15. Includes the shipping label.",
+   "pct": 20,
+   "rules": [
+    {
+     "maxUSD": 15,
+     "flatUSD": 2.95
+    }
+   ],
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 1,
+    "shoes": 1,
+    "bags": 1.05,
+    "acc": 0.9,
+    "jewel": 0.9,
+    "home": 0.6,
+    "toys": 0.5,
+    "tech": 0.5,
+    "media": 0.4
+   }
+  },
+  {
+   "id": "etsy",
+   "n": "Etsy",
+   "r": "INTL",
+   "note": "US$0.20 listing + 6.5% transaction + 3% + US$0.25 processing. “Vintage” on Etsy must be at least 20 years old.",
+   "pct": 9.5,
+   "fixedUSD": 0.45,
+   "aff": {
+    "garment": 0.9,
+    "shoes": 0.6,
+    "bags": 0.9,
+    "acc": 1,
+    "jewel": 1.15,
+    "home": 1.2,
+    "toys": 0.9,
+    "tech": 0.7,
+    "media": 0.9
+   }
+  },
+  {
+   "id": "vinted",
+   "n": "Vinted (EU/UK)",
+   "r": "INTL",
+   "note": "0% seller fees; buyers pay a buyer-protection fee.",
+   "pct": 0,
+   "fixedUSD": 0,
+   "aff": {
+    "garment": 1.1,
+    "shoes": 1,
+    "bags": 1,
+    "acc": 1,
+    "jewel": 0.9,
+    "home": 0.6,
+    "toys": 0.8,
+    "tech": 0.6,
+    "media": 0.6
+   }
+  }
+ ],
+ "shipping": [
+  {
+   "id": "paxi_std",
+   "n": "PAXI standard bag, 7–9 days",
+   "zar": 59.95
+  },
+  {
+   "id": "paxi_fast",
+   "n": "PAXI standard bag, 3–5 days",
+   "zar": 109.95
+  },
+  {
+   "id": "paxi_large",
+   "n": "PAXI large bag, 7–9 days",
+   "zar": 119.95
+  },
+  {
+   "id": "paxi_home",
+   "n": "PAXI store-to-home",
+   "zar": 119.95
+  },
+  {
+   "id": "pudo",
+   "n": "Pudo locker (from)",
+   "zar": 50
+  },
+  {
+   "id": "collect",
+   "n": "Buyer collects / meet-up",
+   "zar": 0
+  }
+ ],
+ "trends": [
+  {
+   "n": "Vintage football jerseys",
+   "heat": 94,
+   "mo": 2,
+   "cats": [
+    "activewear",
+    "tops"
+   ],
+   "k": "football jersey soccer world cup kit umbro kappa hummel",
+   "src": "Depop Trending, June & July 2026"
+  },
+  {
+   "n": "Tenniscore",
+   "heat": 90,
+   "mo": 2,
+   "cats": [
+    "activewear",
+    "tops",
+    "dresses"
+   ],
+   "k": "tennis tenniscore pleated lacoste polo",
+   "src": "Depop Trending, July 2026"
+  },
+  {
+   "n": "Bandage & bodycon dresses",
+   "heat": 86,
+   "mo": 1,
+   "cats": [
+    "dresses"
+   ],
+   "k": "bandage bodycon herve leger",
+   "src": "Depop 2026 Trend Report; June 2026"
+  },
+  {
+   "n": "Low-profile shoes (loafers, ballet flats, kitten heels)",
+   "heat": 86,
+   "mo": 2,
+   "cats": [
+    "shoes"
+   ],
+   "k": "loafer ballet flat kitten heel boat shoe espadrille jelly",
+   "src": "Depop 2026 Trend Report; July 2026"
+  },
+  {
+   "n": "Lace, sheer & embroidery",
+   "heat": 84,
+   "mo": 1,
+   "cats": [
+    "dresses",
+    "tops"
+   ],
+   "k": "lace sheer embroidered slip romantic satin",
+   "src": "Depop Trending, June & July 2026"
+  },
+  {
+   "n": "Vintage Lululemon & sporty layers",
+   "heat": 84,
+   "mo": 1,
+   "cats": [
+    "activewear",
+    "outerwear"
+   ],
+   "k": "lululemon ski bike shorts",
+   "src": "Depop 2026 Trend Report"
+  },
+  {
+   "n": "Vintage leather bags (Coach, Coachtopia)",
+   "heat": 84,
+   "mo": 1,
+   "cats": [
+    "bags"
+   ],
+   "k": "coach leather bag",
+   "src": "Depop Trending, June 2026"
+  },
+  {
+   "n": "Modern uniforms: peacoats, workwear, office shirts",
+   "heat": 80,
+   "mo": 1,
+   "cats": [
+    "outerwear",
+    "tops",
+    "knitwear"
+   ],
+   "k": "peacoat workwear chore jacket button down boxy knit",
+   "src": "Depop 2026 Trend Report"
+  },
+  {
+   "n": "Statement & silver chain jewellery",
+   "heat": 80,
+   "mo": 1,
+   "cats": [
+    "jewellery"
+   ],
+   "k": "statement silver chain cameo",
+   "src": "Depop 2026 Trend Report; June 2026"
+  },
+  {
+   "n": "Preppy Americana",
+   "heat": 78,
+   "mo": 0,
+   "cats": [
+    "tops",
+    "bottoms",
+    "shoes"
+   ],
+   "k": "polo ralph lauren boat shoes tailored shorts",
+   "src": "Depop Trending, June 2026"
+  },
+  {
+   "n": "Backpacks (Lululemon, JanSport, TNF, Oakley)",
+   "heat": 76,
+   "mo": 1,
+   "cats": [
+    "bags"
+   ],
+   "k": "backpack jansport",
+   "src": "Depop Trending, July 2026"
+  },
+  {
+   "n": "Neo-nostalgia: JNCO jorts, archive pieces",
+   "heat": 76,
+   "mo": 1,
+   "cats": [
+    "bottoms",
+    "tops"
+   ],
+   "k": "jnco jorts archive wide leg",
+   "src": "Depop 2026 Trend Report"
+  },
+  {
+   "n": "Plaids & checks",
+   "heat": 72,
+   "mo": 1,
+   "cats": [
+    "tops",
+    "outerwear",
+    "bottoms"
+   ],
+   "k": "plaid check tartan flannel",
+   "src": "Depop Trending, July 2026"
+  },
+  {
+   "n": "Capri pants",
+   "heat": 70,
+   "mo": 0,
+   "cats": [
+    "bottoms"
+   ],
+   "k": "capri",
+   "src": "Depop Trending, June 2026"
+  },
+  {
+   "n": "Y2K logo & velour",
+   "heat": 68,
+   "mo": -1,
+   "cats": [
+    "activewear",
+    "tops",
+    "bags"
+   ],
+   "k": "y2k velour juicy baby phat rhinestone",
+   "src": "Long-running; cooling from its 2022–24 peak"
+  },
+  {
+   "n": "Film point-and-shoot cameras",
+   "heat": 82,
+   "mo": 0,
+   "cats": [
+    "tech"
+   ],
+   "k": "film camera point and shoot mju",
+   "src": "Ongoing collector demand"
+  },
+  {
+   "n": "Gorpcore shells & fleece",
+   "heat": 76,
+   "mo": -1,
+   "cats": [
+    "outerwear"
+   ],
+   "k": "arc teryx gore-tex fleece salomon",
+   "src": "Ongoing; heavy fakes in market"
+  }
+ ],
+ "colours": [
+  {
+   "n": "Burnt orange",
+   "hex": "#c4561b"
+  },
+  {
+   "n": "Teal",
+   "hex": "#1b8a8f"
+  },
+  {
+   "n": "Matcha green",
+   "hex": "#9cad62"
+  },
+  {
+   "n": "Dusky pink",
+   "hex": "#d7a1a6"
+  },
+  {
+   "n": "Blue (kitten heels)",
+   "hex": "#3d6fd1"
+  }
+ ],
+ "facts": [
+  {
+   "t": "Global secondhand apparel is projected to reach US$393 billion by 2030 and is growing about twice as fast as the overall apparel market.",
+   "s": "ThredUp Resale Report 2026"
+  },
+  {
+   "t": "Yaga reports 2 million users and more than 6 million items sold in South Africa since launching in 2017.",
+   "s": "BusinessTech, 12 Jan 2026"
+  },
+  {
+   "t": "Depop removed its 10% selling fee for US and UK sellers in July 2024; new boosted listings carry a 12% boosting fee from 23 March 2026.",
+   "s": "Depop fee pages via OneCart, 2026"
+  },
+  {
+   "t": "Grailed cut its commission to 6% for sales under US$120 from 20 May 2026.",
+   "s": "EcomCalcTools, 2026"
+  },
+  {
+   "t": "Ralph Lauren agreed in 2025 to buy the South African Polo trademarks from LA Group, ending a 50-year coexistence.",
+   "s": "The Fashion Law, Dec 2025"
+  }
+ ],
+ "changelog": [
+  {
+   "d": "2026-10-14",
+   "t": "Market data now updates online: exchange rates every weekday, fees, courier prices and trends every two weeks."
+  }
+ ]
+}

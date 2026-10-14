@@ -1,0 +1,36 @@
+name: Update exchange rates
+
+on:
+  schedule:
+    # Weekdays at 15:37 UTC (17:37 in South Africa), after the ECB publishes its daily reference rates
+    - cron: '37 15 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-data
+  cancel-in-progress: false
+
+jobs:
+  rates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch ECB rates
+        run: node scripts/update-fx.mjs
+      - name: Validate
+        run: node scripts/validate.mjs
+      - name: Commit if changed
+        run: |
+          if git diff --quiet market.json; then echo "Nothing to commit"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Exchange rates for $(node -p "require('./market.json').checked.fx")"
+          git pull --rebase origin main
+          git push
