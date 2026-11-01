@@ -1,17 +1,17 @@
 {
  "schema": 1,
- "updated": "2026-10-30",
+ "updated": "2026-11-01",
  "checked": {
   "fx": "2026-10-30",
-  "fees": "2026-10-13",
+  "fees": "2026-11-01",
   "shipping": "2026-10-13",
-  "trends": "2026-10-13"
+  "trends": "2026-11-01"
  },
  "src": {
   "fx": "European Central Bank reference rates (via Frankfurter)",
   "fees": "Each platform’s own fee pages",
   "shipping": "paxi.co.za; Pudo price per Engineering News",
-  "trends": "Depop Trending, June & July 2026",
+  "trends": "Depop Trending, June & July 2026 (no newer Depop trend report as of 1 Nov 2026)",
   "colours": "Depop, July 2026"
  },
  "fx": {
@@ -101,7 +101,7 @@
    "id": "depop_us",
    "n": "Depop (US/UK)",
    "r": "INTL",
-   "note": "0% selling fee in the US and UK since July 2024; payment processing 3.3% + US$0.45 (US). Boosting 12% on boosted sales. Other countries: 10% selling fee.",
+   "note": "0% selling fee in the US and UK since July 2024; payment processing 3.3% + US$0.45 (US). Boosting 12% on boosted sales. Other countries: 10% selling fee. Owned by eBay since July 2026.",
    "pct": 3.3,
    "fixedUSD": 0.45,
    "aff": {
@@ -490,12 +490,12 @@
    "s": "ThredUp Resale Report 2026"
   },
   {
-   "t": "Yaga reports 2 million users and more than 6 million items sold in South Africa since launching in 2017.",
-   "s": "BusinessTech, 12 Jan 2026"
+   "t": "eBay completed its US$1.4 billion purchase of Depop in July 2026. Together they sold US$9 billion of US fashion in the past year, and Depop reached 11 million active buyers.",
+   "s": "Fortune, 29 Oct 2026"
   },
   {
-   "t": "Depop removed its 10% selling fee for US and UK sellers in July 2024; new boosted listings carry a 12% boosting fee from 23 March 2026.",
-   "s": "Depop fee pages via OneCart, 2026"
+   "t": "Yaga reports 2 million users and more than 6 million items sold in South Africa since launching in 2017.",
+   "s": "BusinessTech, 12 Jan 2026"
   },
   {
    "t": "Grailed cut its commission to 6% for sales under US$120 from 20 May 2026.",
@@ -507,6 +507,14 @@
   }
  ],
  "changelog": [
+  {
+   "d": "2026-11-01",
+   "t": "Fees re-checked on each platform's own pages: no changes. Depop is now owned by eBay."
+  },
+  {
+   "d": "2026-11-01",
+   "t": "Market facts: added eBay's purchase of Depop and their 2026 sales numbers; trends re-checked, no newer reports."
+  },
   {
    "d": "2026-10-14",
    "t": "Market data now updates online: exchange rates every weekday, fees, courier prices and trends every two weeks."
